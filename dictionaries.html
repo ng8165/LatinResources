@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="robots" content="noindex">
+
+        <title>Latin Dictionaries</title>
+        <link type="text/css" rel="stylesheet" href="../css/stylesheet.css"/>
+        <link rel="icon" type="ico" href="images/favicon.png">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="latin.html">Home</a></li>
+                <li><u><a href="dictionaries.html">Dictionaries</a></u></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="charts.html">Charts</a></li>
+            </ul>
+        </nav>
+
+        <h1>Latin Dictionaries</h1>
+
+        <center><p class="headerinline">Cambridge Latin Dictionary: <a class="linkinline" href="https://www.cambridgescp.com/sites/www.cambridgescp.com/files/legacy_root_files/singles/nadic3/index.html?mn=373939" target="_blank">click here</a></p></center>
+
+        <div id="whitaker-words">
+            <center>
+                <p class="header">Whitaker's Latin Dictionary</p>
+
+                <input type="radio" id="lat-selector" name="selector" checked/> <label for="lat-selector">Latin to English</label><br>
+                <input type="radio" id="eng-selector" name="selector"/> <label for="eng-selector">English to Latin</label><br><br>
+
+                <input type="text" id="input" size="21" placeholder="Enter a Latin word..."/>
+                <button id="submit">Submit</button>
+            </center><br>
+
+            <center><iframe id="dictresult" style="display:none" frameborder="0" width="85%" height="300px"></iframe></center>
+        </div>
+
+        <script type="text/javascript" src="js/dictionary.js"></script>
+    </body>
+</html>
