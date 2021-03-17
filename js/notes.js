@@ -28,11 +28,6 @@ document.getElementById("videos-verbs-passive").onclick = function () {
     document.getElementById("videos-verbs-passive").setAttribute("style", "padding: 2px;");
 }
 
-document.getElementById("videos-verbs-perfectpassive").onclick = function () {
-    document.getElementById("videos-verbs-perfectpassive").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWV3QY9oagqwmI4aBWw9lkeiDiCgvA4Kr" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-    document.getElementById("videos-verbs-perfectpassive").setAttribute("style", "padding: 2px;");
-}
-
 
 document.getElementById("videos-nouns-declensions").onclick = function () {
     document.getElementById("videos-nouns-declensions").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWV3QY9oagqye_BYRusVy5a0-xaSGSf7O" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
