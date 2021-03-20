@@ -55,3 +55,8 @@ document.getElementById("videos-other-numbers").onclick = function () {
     document.getElementById("videos-other-numbers").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8sY8ykRXAZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     document.getElementById("videos-other-numbers").setAttribute("style", "padding: 2px;");
 }
+
+document.getElementById("videos-other-pronunciation").onclick = function () {
+    document.getElementById("videos-other-pronunciation").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqyyjZsAfUKgZB4-7ZkaWrsb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    document.getElementById("videos-other-pronunciation").setAttribute("style", "padding: 2px;");
+}
