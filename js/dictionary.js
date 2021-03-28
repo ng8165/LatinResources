@@ -20,8 +20,8 @@ document.getElementById("submit").onclick = function() {
     }
 }
                 
-document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
+document.getElementById("input").addEventListener("keyup", function(event) {
+    if (event.key == "Enter") {
         document.getElementById("submit").click();
     }
 });
