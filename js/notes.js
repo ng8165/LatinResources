@@ -39,6 +39,11 @@ document.getElementById("videos-nouns-cases").onclick = function () {
     document.getElementById("videos-nouns-cases").setAttribute("style", "padding: 2px;");
 }
 
+document.getElementById("videos-nouns-ablativeabsolute").onclick = function () {
+    document.getElementById("videos-nouns-ablativeabsolute").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1_BUn1zH7IM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    document.getElementById("videos-nouns-ablativeabsolute").setAttribute("style", "padding: 2px;");
+}
+
 
 document.getElementById("videos-pronouns-relative").onclick = function () {
     document.getElementById("videos-pronouns-relative").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eNUiJ6-J9og" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
