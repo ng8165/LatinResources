@@ -18,14 +18,14 @@ document.getElementById("videos-verbs-subjunctive").onclick = function () {
     document.getElementById("videos-verbs-subjunctive").setAttribute("style", "padding: 2px;");
 }
 
-document.getElementById("videos-verbs-gerundives").onclick = function () {
-    document.getElementById("videos-verbs-gerundives").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/d7wSUmW9VjA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-    document.getElementById("videos-verbs-gerundives").setAttribute("style", "padding: 2px;");
-}
-
 document.getElementById("videos-verbs-passive").onclick = function () {
     document.getElementById("videos-verbs-passive").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqwJyLNN28nT6-eOsMwMbrxP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     document.getElementById("videos-verbs-passive").setAttribute("style", "padding: 2px;");
+}
+
+document.getElementById("vidoes-verbs-infinitives").onclick = function () {
+    document.getElementById("vidoes-verbs-infinitives").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_EDPovhgp38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    document.getElementById("vidoes-verbs-infinitives").setAttribute("style", "padding: 2px;")
 }
 
 
@@ -64,4 +64,9 @@ document.getElementById("videos-other-numbers").onclick = function () {
 document.getElementById("videos-other-pronunciation").onclick = function () {
     document.getElementById("videos-other-pronunciation").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqyyjZsAfUKgZB4-7ZkaWrsb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     document.getElementById("videos-other-pronunciation").setAttribute("style", "padding: 2px;");
+}
+
+document.getElementById("videos-other-wordorder").onclick = function () {
+    document.getElementById("videos-other-wordorder").innerHTML = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/J_BYm26BdxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    document.getElementById("videos-other-wordorder").setAttribute("style", "padding: 2px;");
 }
