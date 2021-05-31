@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="robots" content="noindex">
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow, noarchive">
+        <meta name="Description" content="Latin Charts made by Nelson Gou">
         <title>Latin Dictionaries</title>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link rel="icon" type="ico" href="images/favicon.png">
+        <script type="text/javascript" src="js/dictionary.js"></script>
     </head>
     <body>
         <nav>
@@ -25,16 +28,14 @@
             <center>
                 <p class="header">Whitaker's Latin Dictionary</p>
 
-                <input type="radio" id="lat-selector" name="selector" checked/> <label for="lat-selector">Latin to English</label><br>
-                <input type="radio" id="eng-selector" name="selector"/> <label for="eng-selector">English to Latin</label><br><br>
+                <input type="radio" id="lat-selector" name="selector" onchange="changePlaceholder()" checked/> <label for="lat-selector">Latin to English</label><br>
+                <input type="radio" id="eng-selector" name="selector" onchange="changePlaceholder()"/> <label for="eng-selector">English to Latin</label><br><br>
 
                 <input type="text" id="input" size="21" placeholder="Enter a Latin word..."/>
-                <button id="submit">Submit</button>
+                <button id="submit" onclick="generateResults()">Submit</button>
             </center><br>
 
             <center><iframe id="dictresult" style="display:none" frameborder="0" width="85%" height="300px"></iframe></center>
         </div>
-
-        <script type="text/javascript" src="js/dictionary.js"></script>
     </body>
 </html>

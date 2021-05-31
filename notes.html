@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="robots" content="noindex">
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow, noarchive">
+        <meta name="Description" content="Latin Resources made by Nelson Gou">
         <title>Latin Notes</title>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link rel="icon" type="ico" href="images/favicon.png">
+        <script src="js/notes.js"></script>
     </head>
     <body>
         <nav>
@@ -123,47 +126,45 @@
         <div id="videos-verbs">
             <p class="header">Verbs</p>
 
-            <div class="link" id="videos-verbs-active">Active Verbs</div>
+            <div class="link" id="videos-verbs-active" onclick="playVideosVerbsActive()">Active Verbs</div>
 
-            <div class="link" id="videos-verbs-imperative">The Imperative</div>
+            <div class="link" id="videos-verbs-imperative" onclick="playVideosVerbsImperative()">The Imperative</div>
 
-            <div class="link" id="videos-verbs-participles">Participles</div>
+            <div class="link" id="videos-verbs-participles" onclick="playVideosVerbsParticiples()">Participles</div>
 
-            <div class="link" id="videos-verbs-subjunctive">The Subjunctive</div>
+            <div class="link" id="videos-verbs-subjunctive" onclick="playVideosVerbsSubjunctive()">The Subjunctive</div>
 
-            <div class="link" id="videos-verbs-passive">Passive Verbs</div>
+            <div class="link" id="videos-verbs-passive" onclick="playVideosVerbsPassive()">Passive Verbs</div>
 
-            <div class="link" id="vidoes-verbs-infinitives">Infinitives</div>
+            <div class="link" id="vidoes-verbs-infinitives" onclick="playVidoesVerbsInfinitives()">Infinitives</div>
         </div>
 
         <div id="videos-nouns">
             <p class="header">Nouns</p>
 
-            <div class="link" id="videos-nouns-declensions">Declensions</div>
+            <div class="link" id="videos-nouns-declensions" onclick="playVideosNounsDeclensions()">Declensions</div>
 
-            <div class="link" id="videos-nouns-cases">Cases</div>
+            <div class="link" id="videos-nouns-cases" onclick="playVideosNounsCases()">Cases</div>
 
-            <div class="link" id="videos-nouns-ablativeabsolute">The Ablative Absolute</div>
+            <div class="link" id="videos-nouns-ablativeabsolute" onclick="playVideosNounsAblativeAbsolute()">The Ablative Absolute</div>
         </div>
 
         <div id="videos-pronouns">
             <p class="header">Pronouns</p>
 
-            <div class="link" id="videos-pronouns-relative">Relative Pronouns (qui quae quod)</div>
+            <div class="link" id="videos-pronouns-relative" onclick="playVideosPronounsRelative()">Relative Pronouns (qui quae quod)</div>
 
-            <div class="link" id="videos-pronouns-personal">Personal Pronouns (is ea id)</div>
+            <div class="link" id="videos-pronouns-personal" onclick="playVideosPronounsPersonal()">Personal Pronouns (is ea id)</div>
         </section>
 
         <section>
             <p class="header">Other</p>
 
-            <div class="link" id="videos-other-numbers">Numbers</div>
+            <div class="link" id="videos-other-numbers" onclick="playVideosOtherNumbers()">Numbers</div>
 
-            <div class="link" id="videos-other-pronunciation">Pronunciation</div>
+            <div class="link" id="videos-other-pronunciation" onclick="playVideosOtherPronunciation()">Pronunciation</div>
 
-            <div class="link" id="videos-other-wordorder">Word Order</div>
+            <div class="link" id="videos-other-wordorder" onclick="playVideosOtherWordOrder()">Word Order</div>
         </section>
-
-        <script src="js/notes.js"></script>
     </body>
 </html>

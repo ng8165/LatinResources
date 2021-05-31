@@ -1,4 +1,4 @@
-document.getElementById("submit").onclick = function() {
+function generateResults() {
     var input = document.getElementById("input");
     
     // check if input is empty
@@ -25,14 +25,14 @@ document.getElementById("submit").onclick = function() {
     input.value = "";
 }
                 
-document.getElementById("input").addEventListener("keyup", function(event) {
+document.addEventListener("keyup", function(event) {
     // if enter key is pressed simulate a submit button click to initiate dictionary
     if (event.key == "Enter") {
-        document.getElementById("submit").click();
+        generateResults();
     }
 });
 
-document.addEventListener("change", function() {
+function changePlaceholder() {
     // if radio button is changed, change the placeholder accordingly
     var input = document.getElementById("input");
     
@@ -41,4 +41,4 @@ document.addEventListener("change", function() {
     } else {
         input.setAttribute("placeholder", "Enter an English word...")
     }
-});
+}
