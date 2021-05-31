@@ -10,9 +10,9 @@ function generateResults() {
     // find url to go in the dictionary iframe
     var url;
     if (document.getElementById("lat-selector").checked) {
-        url = "http://archives.nd.edu/cgi-bin/wordz.pl?keyword=" + input.value;
+        url = "https://archives.nd.edu/cgi-bin/wordz.pl?keyword=" + input.value;
     } else {
-        url = "http://archives.nd.edu/cgi-bin/wordz.pl?english=" + input.value;
+        url = "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + input.value;
     }
 
     var dictresult = document.getElementById("dictresult");
