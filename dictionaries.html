@@ -13,12 +13,20 @@
     <body>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="currentpage"><a href="dictionaries.html">Dictionaries</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="charts.html">Charts</a></li>
+                <li class="navli"><a href="index.html">Home</a></li>
+                <li class="currentpageli"><a class="currentpage" href="dictionaries.html">Dictionaries</a></li>
+                <li class="navli"><a href="notes.html">Notes</a></li>
+                <li class="navli"><a href="charts.html">Charts</a></li>
             </ul>
+
+            <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
         </nav>
+
+        <div id="dropdown" class="dropdown" style="display: none;"><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="charts.html">Charts</a></li>
+        </ul></div>
 
         <h1>Latin Dictionaries</h1>
 
@@ -37,5 +45,16 @@
 
             <center><iframe id="dictresult" style="display:none" frameborder="0" width="85%" height="300px"></iframe></center>
         </div>
+
+        <script>
+            function openSubNav() {
+                var dropdown = document.getElementById("dropdown");
+                if (dropdown.getAttribute("style") == "display: none;") {
+                    dropdown.setAttribute("style", "display: block;");
+                } else {
+                    dropdown.setAttribute("style", "display: none;");
+                }
+            }
+        </script>
     </body>
 </html>

@@ -12,12 +12,20 @@
     <body>
         <nav>
             <ul>
-                <li class="currentpage"><a href="index.html">Home</a></li>
-                <li><a href="dictionaries.html">Dictionaries</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="charts.html">Charts</a></li>
+                <li class="currentpageli"><a class="currentpage" href="index.html">Home</a></li>
+                <li class="navli"><a href="dictionaries.html">Dictionaries</a></li>
+                <li class="navli"><a href="notes.html">Notes</a></li>
+                <li class="navli"><a href="charts.html">Charts</a></li>
             </ul>
+
+            <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
         </nav>
+
+        <div id="dropdown" class="dropdown" style="display: none;"><ul>
+            <li><a href="dictionaries.html">Dictionaries</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="charts.html">Charts</a></li>
+        </ul></div>
 
         <h1>Latin Resources</h1>
         <p class="subtitle">by Nelson Gou</p>
@@ -42,5 +50,16 @@
 
         <br>Thanks for visiting this website! We aim to be a one-stop-shop for all of your Latin needs, whether it be dictionaries, notes, or charts.<br><br>
         If you want to give feedback or report an error with the website, please contact me by filling out <a class="linkinline" href="../contact.html">this form</a>. Any help or advice would be greatly appreciated!
+
+        <script>
+            function openSubNav() {
+                var dropdown = document.getElementById("dropdown");
+                if (dropdown.getAttribute("style") == "display: none;") {
+                    dropdown.setAttribute("style", "display: block;");
+                } else {
+                    dropdown.setAttribute("style", "display: none;");
+                }
+            }
+        </script>
 </body>
 </html>
