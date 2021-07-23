@@ -19,7 +19,7 @@ function generateResults() {
     
     // set the url and make the dictionary iframe visible
     dictresult.setAttribute("src", url);
-    dictresult.setAttribute("style", "visibility: visible");
+    dictresult.setAttribute("style", "visibility: visible; padding-bottom: 8px;");
          
     // clear the input
     input.value = "";
