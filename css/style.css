@@ -26,6 +26,7 @@ nav {
     font-weight: bold;
     margin-top: 16px;
     overflow: hidden;
+    user-select: none;
 }
 
 nav ul {
@@ -45,7 +46,7 @@ nav li, nav .hamburgermenu {
     float: left;
 }
 
-nav li a {
+nav a {
     color: black;
     text-decoration: none;
 }
@@ -65,11 +66,20 @@ nav .hamburgermenu {
     margin-top: -3px;
     display: none;
     font-family: inherit;
+    user-select: none;
 }
 
 nav .hamburgermenu:hover {
     background-color: #95baf5;
     cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sitetitle {
+    font-size: 20px;
 }
 
 .dropdown {
@@ -87,6 +97,7 @@ nav .hamburgermenu:hover {
     height: auto;
     width: 120px;
     display: none;
+    user-select: none;
 }
 
 .dropdown ul {
@@ -105,7 +116,7 @@ nav .hamburgermenu:hover {
     position: relative;
 }
 
-.dropdown li a {
+.dropdown a {
     color: black;
     text-decoration: none;
 }
@@ -116,7 +127,7 @@ nav .hamburgermenu:hover {
 }
 
 @media screen and (max-width: 655px) {
-    nav ul .navli {
+    nav ul .navpage {
         display: none;
         padding: 0px;
     }
@@ -124,6 +135,14 @@ nav .hamburgermenu:hover {
     nav .hamburgermenu {
         float: right;
         display: block;
+    }
+}
+
+@media screen and (min-width: 655px) {
+    .dropdown {
+        border: 0;
+        width: 0;
+        height: 0;
     }
 }
 
@@ -211,6 +230,7 @@ input, button {
     padding: 8px;
 }
 
+/*
 .returnbutton {
     position: absolute;
     left: 15px;
@@ -226,6 +246,7 @@ input, button {
         display: none !important;
     }
 }
+*/
 
 .subtitle {
     font-weight: bold;
