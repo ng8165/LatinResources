@@ -27,6 +27,7 @@ nav {
     margin-top: 16px;
     overflow: hidden;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 nav ul {
@@ -56,7 +57,7 @@ nav li:hover {
     cursor: pointer;
 }
 
-nav ul li a.currentpage {
+.currentpage {
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
@@ -67,6 +68,7 @@ nav .hamburgermenu {
     display: none;
     font-family: inherit;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 nav .hamburgermenu:hover {
@@ -103,6 +105,7 @@ h2 {
     width: 120px;
     display: none;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 .dropdown ul {
@@ -257,10 +260,4 @@ input, button {
     font-weight: bold;
     font-size: 20px;
     margin-top: -10px;
-}
-
-.currentpage {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 2px;
 }
