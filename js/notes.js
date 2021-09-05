@@ -22,37 +22,89 @@ function playVidoesVerbsInfinitives() {
     document.getElementById("vidoes-verbs-infinitives").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/_EDPovhgp38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
+function playVideosVerbsImpersonal() {
+    document.getElementById("videos-verbs-impersonal").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/ARpiz_gL9do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
 
 function playVideosNounsDeclensions() {
     document.getElementById("videos-nouns-declensions").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqye_BYRusVy5a0-xaSGSf7O" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
 function playVideosNounsCases() {
-    document.getElementById("videos-nouns-cases").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqy-g2FyEROv2CsKUKz_3Amt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    document.getElementById("videos-nouns-cases").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/2fhP_fk2wNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
-function playVideosNounsAblativeAbsolute() {
-    document.getElementById("videos-nouns-ablativeabsolute").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/1_BUn1zH7IM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+function playVideosNounsNominative() {
+    document.getElementById("videos-nouns-nominative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/-JpCdQ3mp8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
+function playVideosNounsGenitive() {
+    document.getElementById("videos-nouns-genitive").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqwaVR1w784BUrRXo8YKon0j" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosNounsDative() {
+    document.getElementById("videos-nouns-dative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqwsCNue9hPrVNErXvOHYuUU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosNounsAccusative() {
+    document.getElementById("videos-nouns-accusative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqx6mdm6c3w9ZJmbLcZwbb8O" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosNounsAblative() {
+    document.getElementById("videos-nouns-ablative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqx0LqZLZ9SFi8z4jvB275wh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosNounsVocative() {
+    document.getElementById("videos-nouns-vocative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/EtN_62_pKYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosNounsLocative() {
+    document.getElementById("videos-nouns-locative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/VwLS-fh3pVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+
+function playVideosAdjectivesBasics() {
+    document.getElementById("videos-adjectives-basics").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqwoFacdNg8xikZUrM9_GnMX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosAdjectivesComparisons() {
+    document.getElementById("videos-adjectives-comparisons").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqw21tqUbOgZk0DihpQ7dQFP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+
+function playVideosAdverbsBasics() {
+    document.getElementById("videos-adverbs-basics").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/HjdPyAvo7Ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosAdverbsComparisons() {
+    document.getElementById("videos-adverbs-comparisons").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube.com/embed/lKk8lpGh198?&start=251" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
 
 function playVideosPronounsRelative() {
-    document.getElementById("videos-pronouns-relative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/eNUiJ6-J9og" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    document.getElementById("videos-pronouns-relative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/L0_k1J-qg0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
 function playVideosPronounsPersonal() {
     document.getElementById("videos-pronouns-personal").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/74R9hHFr0JI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
-
-function playVideosOtherNumbers() {
-    document.getElementById("videos-other-numbers").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/8sY8ykRXAZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+function playVideosPronounsDemonstrative() {
+    document.getElementById("videos-pronouns-demonstrative").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqwQAiZgTOq3i7mhunKA-DYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
-function playVideosOtherPronunciation() {
-    document.getElementById("videos-other-pronunciation").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqyyjZsAfUKgZB4-7ZkaWrsb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+function playVideosMiscIndirectStatement() {
+    document.getElementById("videos-misc-indirectstatement").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/q67_3SwXHWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
 
-function playVideosOtherWordOrder() {
-    document.getElementById("videos-other-wordorder").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/J_BYm26BdxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+function playVideosMiscNumbers() {
+    document.getElementById("videos-misc-numbers").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/8sY8ykRXAZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosMiscPronunciation() {
+    document.getElementById("videos-misc-pronunciation").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWV3QY9oagqyyjZsAfUKgZB4-7ZkaWrsb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function playVideosMiscWordOrder() {
+    document.getElementById("videos-misc-wordorder").innerHTML = '<iframe width=50% style="aspect-ratio: 16/9; padding: 2px;" src="https://www.youtube-nocookie.com/embed/J_BYm26BdxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 }
