@@ -195,7 +195,6 @@ input, button {
 .link, .linkinline, .linkimportant, .linkimportantinline {
     text-align: center;
     text-decoration: underline;
-    color: #582c8c;
     font-weight: normal;
 }
 .link:hover, .linkinline:hover, .linkimportant:hover, .linkimportantinline:hover {
@@ -262,4 +261,29 @@ input, button {
     font-weight: bold;
     font-size: 20px;
     margin-top: -10px;
+}
+
+.notes {
+    background-color: #accce3;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    text-align: center;
+    display: table;
+    width: auto;
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+}
+
+.notes:hover {
+    background-color: #769fe0;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
 }
