@@ -1,28 +1,25 @@
 function generateResults() {
-    var input = document.getElementById("input");
+    let input = document.getElementById("input").value;
+    const query = input.replace(/\s/g, '_');
     
     // check if input is empty
-    if (input.value == "") {
+    if (input == "") {
         alert("You didn't input a word.");
         return;
     }
 
     // find url to go in the dictionary iframe
-    var url;
-    if (document.getElementById("lat-selector").checked) {
-        url = "https://archives.nd.edu/cgi-bin/wordz.pl?keyword=" + input.value;
-    } else {
-        url = "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + input.value;
-    }
+    const url = "https://archives.nd.edu/cgi-bin/wordz.pl?" +
+        (document.getElementById("lat-selector").checked ? "keyword" : "english") + "=" + query;
 
-    var dictresult = document.getElementById("dictresult");
+    const dictresult = document.getElementById("dictresult");
     
     // set the url and make the dictionary iframe visible
     dictresult.setAttribute("src", url);
     dictresult.setAttribute("style", "visibility: visible; padding-bottom: 8px;");
          
     // clear the input
-    input.value = "";
+    document.getElementById("input").value = "";
 }
                 
 document.addEventListener("keyup", function(event) {
@@ -34,7 +31,7 @@ document.addEventListener("keyup", function(event) {
 
 function changePlaceholder() {
     // if radio button is changed, change the placeholder accordingly
-    var input = document.getElementById("input");
+    const input = document.getElementById("input");
     
     if (document.getElementById("lat-selector").checked) {
         input.setAttribute("placeholder", "Enter a Latin word...")
