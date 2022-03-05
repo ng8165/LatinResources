@@ -2,103 +2,107 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Description" content="Latin Resources made by Nelson Gou">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="This Latin Notes page is a collection of helpful Latin notes and videos.">
         <title>Latin Notes</title>
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
-        <link rel="icon" type="ico" href="images/favicon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
         <script src="js/notes.js"></script>
     </head>
     <body>
-        <h1>Latin Resources</h1>
+        <header class="site-title">Latin Resources</header>
 
         <nav>
-            <ul>
-                <a href="index.html"><li class="navpage">Home</li></a>
-                <a href="dictionaries.html"><li class="navpage">Dictionaries</li></a>
-                <a href="notes.html"><li class="currentpage">Notes</li></a>
-                <a href="charts.html"><li class="navpage">Charts</li></a>
-            </ul>
+            <div class="navbar main-nav">
+                <a href="index.html" class="navpage">Home</a>
+                <a href="dictionaries.html" class="navpage">Dictionaries</a>
+                <a href="notes.html" class="currentpage">Notes</a>
+                <a href="charts.html" class="navpage">Charts</a>
 
-            <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
+                <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
+            </div>
+
+            <div id="dropdown" class="navbar dropdown" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="dictionaries.html">Dictionaries</a>
+                <a href="charts.html">Charts</a>
+            </div>
         </nav>
 
-        <div id="dropdown" class="dropdown" style="display: none;"><ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="dictionaries.html"><li>Dictionaries</li></a>
-            <a href="charts.html"><li>Charts</li></a>
-        </ul></div>
+        <header class="page-title">Latin Notes & Videos</header>
 
-        <h2 style="text-align: center;">Latin Notes & Videos</h2>
-
-        <div id="verbs"> <center>
+        <section id="verbs" class="flexcol">
             <p class="header">Verbs</p>
 
-            <span class="notes" id="videos-verbs-active" onclick="loadVideo('videos-verbs-active')">Active Indicative</span>
-            <span class="notes" id="videos-verbs-passive" onclick="loadVideo('videos-verbs-passive')">Passive Indicative</span>
-            <span class="notes" id="videos-verbs-imperative" onclick="loadVideo('videos-verbs-imperative')">Imperative</span>
-            <span class="notes" id="videos-verbs-infinitives" onclick="loadVideo('videos-verbs-infinitives')">Infinitives</span>
-            <span class="notes" id="videos-verbs-participles" onclick="loadVideo('videos-verbs-participles')">Participles</span>
-            <span class="notes" id="videos-verbs-subcons" onclick="loadVideo('videos-verbs-subcons')">Subjunctive (Constructions)</span>
-            <span class="notes" id="videos-verbs-subuses" onclick="loadDoc('videos-verbs-subuses')">Subjunctive (Uses)</span>
-            <span class="notes" id="videos-verbs-impersonal" onclick="loadVideo('videos-verbs-impersonal')">Impersonal</span>
-            <span class="notes" id="videos-verbs-deponent" onclick="loadVideo('videos-verbs-deponent')">Deponent & Semi-Deponent</span>
-            <span class="notes" id="videos-verbs-irregular" onclick="loadDoc('videos-verbs-irregular')">Irregular</span>
-        </center> </div>
+            <button class="button" id="videos-verbs-active" onclick="loadVideo('videos-verbs-active')">Active Indicative</button>
+            <button class="button" id="videos-verbs-passive" onclick="loadVideo('videos-verbs-passive')">Passive Indicative</button>
+            <button class="button" id="videos-verbs-imperative" onclick="loadVideo('videos-verbs-imperative')">Imperative</button>
+            <button class="button" id="videos-verbs-infinitives" onclick="loadVideo('videos-verbs-infinitives')">Infinitives</button>
+            <button class="button" id="videos-verbs-participles" onclick="loadVideo('videos-verbs-participles')">Participles</button>
+            <button class="button" id="videos-verbs-subcons" onclick="loadVideo('videos-verbs-subcons')">Subjunctive (Constructions)</button>
+            <button class="button" id="videos-verbs-subuses" onclick="loadVideo('videos-verbs-subuses')">Subjunctive (Uses)</button>
+            <button class="button" id="videos-verbs-impersonal" onclick="loadVideo('videos-verbs-impersonal')">Impersonal</button>
+            <button class="button" id="videos-verbs-deponent" onclick="loadVideo('videos-verbs-deponent')">Deponent & Semi-Deponent</button>
+            <button class="button" id="videos-verbs-irregular" onclick="loadVideo('videos-verbs-irregular')">Irregular</button>
+        </section>
 
-        <div id="nouns"> <center>
+        <section id="nouns" class="flexcol">
             <p class="header">Nouns</p>
 
-            <span class="notes" id="videos-nouns-declensions" onclick="loadVideo('videos-nouns-declensions')">Declensions</span>
-            <span class="notes" id="videos-nouns-nominative" onclick="loadVideo('videos-nouns-nominative')">Nominative</span>
-            <span class="notes" id="videos-nouns-genitive" onclick="loadVideo('videos-nouns-genitive')">Genitive</span>
-            <span class="notes" id="videos-nouns-dative" onclick="loadVideo('videos-nouns-dative')">Dative</span>
-            <span class="notes" id="videos-nouns-accusative" onclick="loadVideo('videos-nouns-accusative')">Accusative</span>
-            <span class="notes" id="videos-nouns-ablative" onclick="loadVideo('videos-nouns-ablative')">Ablative</span>
-            <span class="notes" id="videos-nouns-vocative" onclick="loadVideo('videos-nouns-vocative')">Vocative</span>
-            <span class="notes" id="videos-nouns-locative" onclick="loadVideo('videos-nouns-locative')">Locative</span>
-        </center> </div>
+            <button class="button" id="videos-nouns-declensions" onclick="loadVideo('videos-nouns-declensions')">Declensions</button>
+            <button class="button" id="videos-nouns-nominative" onclick="loadVideo('videos-nouns-nominative')">Nominative</button>
+            <button class="button" id="videos-nouns-genitive" onclick="loadVideo('videos-nouns-genitive')">Genitive</button>
+            <button class="button" id="videos-nouns-dative" onclick="loadVideo('videos-nouns-dative')">Dative</button>
+            <button class="button" id="videos-nouns-accusative" onclick="loadVideo('videos-nouns-accusative')">Accusative</button>
+            <button class="button" id="videos-nouns-ablative" onclick="loadVideo('videos-nouns-ablative')">Ablative</button>
+            <button class="button" id="videos-nouns-vocative" onclick="loadVideo('videos-nouns-vocative')">Vocative</button>
+            <button class="button" id="videos-nouns-locative" onclick="loadVideo('videos-nouns-locative')">Locative</button>
+        </section>
 
-        <div id="adjectives"> <center>
+        <section id="adjectives" class="flexcol">
             <p class="header">Adjectives</p>
 
-            <span class="notes" id="videos-adjectives-basics" onclick="loadVideo('videos-adjectives-basics')">The Basics</span>
-            <span class="notes" id="videos-adjectives-comparisons" onclick="loadVideo('videos-adjectives-comparisons')">Comparison of Adjectives</span>
-        </center> </div>
+            <button class="button" id="videos-adjectives-basics" onclick="loadVideo('videos-adjectives-basics')">The Basics</button>
+            <button class="button" id="videos-adjectives-comparisons" onclick="loadVideo('videos-adjectives-comparisons')">Comparison of Adjectives</button>
+        </section>
 
-        <div id="adverbs"> <center>
+        <section id="adverbs" class="flexcol">
             <p class="header">Adverbs</p>
 
-            <span class="notes" id="videos-adverbs-basics" onclick="loadVideo('videos-adverbs-basics')">The Basics</span>
-            <span class="notes" id="videos-adverbs-comparisons" onclick="loadVideo('videos-adverbs-comparisons')">Comparison of Adverbs</span>
-        </center> </div>
+            <button class="button" id="videos-adverbs-basics" onclick="loadVideo('videos-adverbs-basics')">The Basics</button>
+            <button class="button" id="videos-adverbs-comparisons" onclick="loadVideo('videos-adverbs-comparisons')">Comparison of Adverbs</button>
+        </section>
 
-        <div id="pronouns"> <center>
+        <section id="pronouns" class="flexcol">
             <p class="header">Pronouns</p>
 
-            <span class="notes" id="videos-pronouns-relative" onclick="loadVideo('videos-pronouns-relative')">Relative (qui quae quod)</span>
-            <span class="notes" id="videos-pronouns-personal" onclick="loadVideo('videos-pronouns-personal')">Personal (is ea id)</span>
-            <span class="notes" id="videos-pronouns-demonstrative" onclick="loadVideo('videos-pronouns-demonstrative')">Demonstrative (hic haec hoc, ille illa illud)</span>
-        </center> </div>
+            <button class="button" id="videos-pronouns-relative" onclick="loadVideo('videos-pronouns-relative')">Relative (qui quae quod)</button>
+            <button class="button" id="videos-pronouns-personal" onclick="loadVideo('videos-pronouns-personal')">Personal (is ea id)</button>
+            <button class="button" id="videos-pronouns-demonstrative" onclick="loadVideo('videos-pronouns-demonstrative')">Demonstrative (hic haec hoc, ille illa illud)</button>
+        </section>
 
-        <div id="misc"> <center>
-            <p class="header">Misc</p>
+        <section id="misc" class="flexcol">
+            <p class="header">Misc.</p>
 
-            <span class="notes" id="videos-misc-conditionals" onclick="loadVideo('videos-misc-conditionals')">Conditionals</span>
-            <span class="notes" id="videos-misc-correlatives" onclick="loadDoc('videos-misc-correlatives')">Correlatives</span>
-            <span class="notes" id="videos-misc-numbers" onclick="loadVideo('videos-misc-numbers')">Numbers</span>
-            <span class="notes" id="videos-misc-pronunciation" onclick="loadVideo('videos-misc-pronunciation')">Pronunciation</span>
-            <span class="notes" id="videos-misc-wordorder" onclick="loadVideo('videos-misc-wordorder')">Word Order</span>
-        </center> </div>
+            <button class="button" id="videos-misc-gerunds" onclick="loadVideo('videos-misc-gerunds')">Gerunds & Gerundives</button>
+            <button class="button" id="videos-misc-conditionals" onclick="loadVideo('videos-misc-conditionals')">Conditionals</button>
+            <button class="button" id="videos-misc-correlatives" onclick="loadSite('videos-misc-correlatives')">Correlatives</button>
+            <button class="button" id="videos-misc-numbers" onclick="loadVideo('videos-misc-numbers')">Numbers</button>
+            <button class="button" id="videos-misc-pronunciation" onclick="loadVideo('videos-misc-pronunciation')">Pronunciation</button>
+            <button class="button" id="videos-misc-wordorder" onclick="loadVideo('videos-misc-wordorder')">Word Order</button>
+        </section>
 
-        <p class="center" style="padding: 5px;">Thanks to <a class="linkinline" href="https://www.youtube.com/c/latintutorial" target="_blank">latintutorial</a>,
-            <a class="linkinline" href="https://www.youtube.com/channel/UCThUx6BAIriQaZ0Uz1cj22g" target="_blank">MountCarmelHSLatin</a>,
-            <a class="linkinline" href="https://www.youtube.com/channel/UCI4akXvPLsup8_tqWmUw3fQ" target="_blank">Nicholas Gresens</a>,
-            and <a class="linkinline" href="https://www.youtube.com/channel/UC1rgnOZU08gXk4g6dqhfDlg" target="_blank">CU Latin Buffs</a>
+        <p class="center" style="margin: 16px 0;">Thanks to
+            <a class="link" href="https://www.youtube.com/c/latintutorial" target="_blank">latintutorial</a>,
+            <a class="link" href="https://www.youtube.com/channel/UCThUx6BAIriQaZ0Uz1cj22g" target="_blank">MountCarmelHSLatin</a>,
+            <a class="link" href="https://www.youtube.com/channel/UCI4akXvPLsup8_tqWmUw3fQ" target="_blank">Nicholas Gresens</a>,
+            <a class="link" href="https://www.youtube.com/channel/UC1rgnOZU08gXk4g6dqhfDlg" target="_blank">CU Latin Buffs</a>,
+            and <a class="link" href="https://www.youtube.com/channel/UCPV1ehU-Rw0vMpIBx5ptJzA" target="_blank">Matthew Bavone</a>
             for making such wonderful Latin videos!
         </p>
 
-        <footer>Made by Nelson Gou. Check out the <a class="linkinline" href='https://github.com/ng8165/latin' target='_blank'>code</a> on Github.</footer>
+        <footer>Made by Nelson Gou. Check out the <a class="link" href='https://github.com/ng8165/latin' target='_blank'>code</a> on Github.</footer>
 
         <script src="js/app.js"></script>
     </body>

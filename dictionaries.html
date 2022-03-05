@@ -2,51 +2,64 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Description" content="Latin Charts made by Nelson Gou">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="This Latin Dictionaries page embeds Whitaker's Latin Dictionary for easy lookups.">
         <title>Latin Dictionaries</title>
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
-        <link rel="icon" type="ico" href="images/favicon.png">
-        <script type="text/javascript" src="js/dictionary.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <script src="js/dictionary.js"></script>
     </head>
     <body>
-        <h1>Latin Resources</h1>
+        <header class="site-title">Latin Resources</header>
 
         <nav>
-            <ul>
-                <a href="index.html"><li class="navpage">Home</li></a>
-                <a href="dictionaries.html"><li class="currentpage">Dictionaries</li></a>
-                <a href="notes.html"><li class="navpage">Notes</li></a>
-                <a href="charts.html"><li class="navpage">Charts</li></a>
-            </ul>
+            <div class="navbar main-nav">
+                <a href="index.html" class="navpage">Home</a>
+                <a href="dictionaries.html" class="currentpage">Dictionaries</a>
+                <a href="notes.html" class="navpage">Notes</a>
+                <a href="charts.html" class="navpage">Charts</a>
 
-            <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
+                <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
+            </div>
+
+            <div id="dropdown" class="navbar dropdown" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="notes.html">Notes</a>
+                <a href="charts.html">Charts</a>
+            </div>
         </nav>
 
-        <div id="dropdown" class="dropdown" style="display: none;"><ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="notes.html"><li>Notes</li></a>
-            <a href="charts.html"><li>Charts</li></a>
-        </ul></div>
+        <header class="page-title">Latin Dictionaries</header>
 
-        <br><br>
-        <center><p class="headerinline">Cambridge Latin Dictionary: <a class="linkinline" href="https://www.cambridgescp.com/sites/www.cambridgescp.com/files/legacy_root_files/singles/nadic3/index.html?mn=373939" target="_blank" rel="noreferrer">from Elevate</a></p></center>
+        <section class="flexcol">
+            <header style="margin-top: 12px;" class="header">Glossa</header>
+            <em class="caption">Recommended by Magister Paterson</em>
+            <a class="link" href="https://orbilius.org/glossa/" target="_blank" rel="noreferrer">on Orbillus</a>
 
-        <div id="whitaker-words">
-            <center>
-                <p class="header">Whitaker's Latin Dictionary</p>
+            <section id="whitaker-words" class="flexcol">
+                <p class="header" style="margin-bottom: 8px;">Whitaker's Latin Dictionary</p>
+                
+                <div>
+                    <input type="radio" id="lat-selector" name="selector" onchange="changePlaceholder()" checked/>
+                    <label for="lat-selector">Latin to English</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="eng-selector" name="selector" onchange="changePlaceholder()"/>
+                    <label for="eng-selector">English to Latin</label>
+                </div>
 
-                <input type="radio" id="lat-selector" name="selector" onchange="changePlaceholder()" checked/> <label for="lat-selector">Latin to English</label><br>
-                <input type="radio" id="eng-selector" name="selector" onchange="changePlaceholder()"/> <label for="eng-selector">English to Latin</label><br><br>
+                <div>
+                    <input style="margin-top: 8px;" type="text" id="input" size="21" placeholder="Enter a Latin word..."/>
+                    <button id="submit" onclick="generateResults()">Submit</button>
+                </div>
+            </section>
+            
+            <iframe id="dictresult" style="display: none;" frameborder="0" width="85%" height="300px"></iframe>
+        </section>
 
-                <input type="text" id="input" size="21" placeholder="Enter a Latin word..."/>
-                <button id="submit" onclick="generateResults()">Submit</button>
-            </center><br>
-
-            <center><iframe id="dictresult" style="display: none;" frameborder="0" width="85%" height="300px"></iframe></center>
-        </div>
-
-        <footer>Made by Nelson Gou. Check out the <a class="linkinline" href='https://github.com/ng8165/latin' target='_blank'>code</a> on Github.</footer>
+        <footer style="margin-top: 12px;">Made by Nelson Gou. Check out the <a class="link" href='https://github.com/ng8165/latin' target='_blank'>code</a> on Github.</footer>
 
         <script src="js/app.js"></script>
     </body>

@@ -1,12 +1,13 @@
 function generateResults() {
-    let input = document.getElementById("input").value;
-    const query = input.replace(/\s/g, '_');
+    const input = document.getElementById("input");
     
     // check if input is empty
-    if (input == "") {
+    if (input.value == "") {
         alert("You didn't input a word.");
         return;
     }
+
+    const query = input.value.replace(/\s/g, '_');
 
     // find url to go in the dictionary iframe
     const url = "https://archives.nd.edu/cgi-bin/wordz.pl?" +
@@ -15,11 +16,12 @@ function generateResults() {
     const dictresult = document.getElementById("dictresult");
     
     // set the url and make the dictionary iframe visible
-    dictresult.setAttribute("src", url);
-    dictresult.setAttribute("style", "visibility: visible; padding-bottom: 8px;");
+    dictresult.src = url;
+    dictresult.style.display = "block";
+    dictresult.style.margin = "16px 0 4px 0";
          
     // clear the input
-    document.getElementById("input").value = "";
+    input.value = "";
 }
                 
 document.addEventListener("keyup", function(event) {

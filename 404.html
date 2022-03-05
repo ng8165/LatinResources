@@ -2,20 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex, nofollow, noarchive">
         <meta name="Description" content="404 for Latin Resources">
-        <title>Site Not Found - Latin Resources</title>
-        <link type="text/css" rel="stylesheet" href="/latin/css/style.css"/>
-        <link rel="icon" type="ico" href="/latin/images/favicon.png">
+        <title>Site Not Found</title>
+        <link rel="stylesheet" href="/latin/css/style.css">
+        <link rel="shortcut icon" href="/latin/images/favicon.png" type="image/x-icon">
     </head>
     <body>
-        <h1 style="text-align: center;">Latin Resources</h1>
+        <section style="display: flex; flex-direction: column; align-items: center;">
+            <header class="site-title">Latin Resources</header>
 
-        <h1 style="font-weight: 500; padding: 10px;">404</h1>
-        <h2 style="font-weight: 500;">Site Not Found</h2>
-        <p style="text-align: center;">Uh Oh! The requested page was not found on this server.</p>
+            <div class="page-title" style="font-size: 2em;">404</div>
+            <h2 style="font-weight: 500;">Site Not Found</h2>
+            <p>Uh Oh! The requested page was not found on this server.</p>
 
-        <p style="text-align: center; padding-top: 10px;"><a href="/latin/index.html">&larr; Home</a></p>
+            <button class="button" style="margin-top: 10px;" onclick="goHome()">&larr; Home</button>
+
+        </section>
+
+        <script>
+            function goHome() {
+                window.location = "/latin/";
+            }
+        </script>
     </body>
 </html>

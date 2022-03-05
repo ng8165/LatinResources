@@ -2,54 +2,59 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Description" content="Latin Charts made by Nelson Gou">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="This Latin Charts page is a collection of helpful Latin charts.">
         <title>Latin Charts</title>
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
-        <link rel="icon" type="ico" href="images/favicon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
         <style>
             img {
-                width: 1100px;
-                height: auto;
-                padding: 20px 40px;
-                box-sizing: border-box;
-                margin-left: auto;
-                margin-right: auto;
+                max-width: 1100px;
             }
         </style>
     </head>
     <body>
-        <h1>Latin Resources</h1>
+        <header class="site-title">Latin Resources</header>
 
         <nav>
-            <ul>
-                <a href="index.html"><li class="navpage">Home</li></a>
-                <a href="dictionaries.html"><li class="navpage">Dictionaries</li></a>
-                <a href="notes.html"><li class="navpage">Notes</li></a>
-                <a href="charts.html"><li class="currentpage">Charts</li></a>
-            </ul>
+            <div class="navbar main-nav">
+                <a href="index.html" class="navpage">Home</a>
+                <a href="dictionaries.html" class="navpage">Dictionaries</a>
+                <a href="notes.html" class="navpage">Notes</a>
+                <a href="charts.html" class="currentpage">Charts</a>
 
-            <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
+                <a class="hamburgermenu" id="hamburgermenu" onclick="openSubNav()">☰</a>
+            </div>
+
+            <div id="dropdown" class="navbar dropdown" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="dictionaries.html">Dictionaries</a>
+                <a href="notes.html">Notes</a>
+            </div>
         </nav>
 
-        <div id="dropdown" class="dropdown" style="display: none;"><ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="dictionaries.html"><li>Dictionaries</li></a>
-            <a href="notes.html"><li>Notes</li></a>
-        </ul></div>
+        <header class="page-title">Latin Charts</header>
 
-        <br><p class="header">Latin Declension Charts</p>
-        <img class="image" src="images/latin-declensions.jpg" alt="Latin Declensions" width="2200" height="1700">
+        <p class="header">Latin Declension Charts</p>
+        <section class="flexrow">
+            <img class="chart" src="images/latin-declensions.jpg" alt="Latin Declensions" width="2200" height="1700">
+        </section>
 
         <p class="header">Latin Conjugation Charts</p>
-        <img class="image" src="images/latin-1st-conjugation.jpg" alt="Latin 1st Conjugation" width="2200" height="1700">
-        <img class="image" src="images/latin-2nd-conjugation.jpg" alt="Latin 2nd Conjugation" width="2200" height="1700">
-        <img class="image" src="images/latin-3rd-conjugation.jpg" alt="Latin 3rd Conjugation" width="2200" height="1700">
-        <img class="image" src="images/latin-3rdio-conjugation.jpg" alt="Latin 3rd IO Conjugation" width="2200" height="1700">
-        <img class="image" src="images/latin-4th-conjugation.jpg" alt="Latin 4th Conjugation" width="2200" height="1700">
-
+        <section class="flexrow">
+            <img class="chart" src="images/latin-1st-conjugation.jpg" alt="Latin 1st Conjugation" width="2200" height="1700">
+            <img class="chart" src="images/latin-2nd-conjugation.jpg" alt="Latin 2nd Conjugation" width="2200" height="1700">
+            <img class="chart" src="images/latin-3rd-conjugation.jpg" alt="Latin 3rd Conjugation" width="2200" height="1700">
+            <img class="chart" src="images/latin-3rdio-conjugation.jpg" alt="Latin 3rd IO Conjugation" width="2200" height="1700">
+            <img class="chart" src="images/latin-4th-conjugation.jpg" alt="Latin 4th Conjugation" width="2200" height="1700">
+        </section>
+        
+        
         <p class="header">Latin Pronouns Charts</p>
-        <img class="image" src="images/latin-pronouns.jpg" alt="Latin Pronouns" width="2200" height="1700">
+        <section class="flexrow">
+            <img class="chart" src="images/latin-pronouns.jpg" alt="Latin Pronouns" width="2200" height="1700">
+        </section>
 
         <p class="center">Charts from <a class="linkinline" href="https://bencrowder.net/" rel="noreferrer">bencrowder.net</a></p>
 
